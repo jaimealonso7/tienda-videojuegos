@@ -9,6 +9,7 @@
     background: #fff;
     padding: 15px 7%;
     transition: 0.5s;
+    
 }
 
 .logo{
@@ -16,10 +17,14 @@
     cursor: pointer;
 }
 
-ul{
+ul {
     flex: 1;
     list-style: none;
-    text-align: center;
+    display: flex; /* Asegura que los elementos estén en línea */
+    justify-content: center; /* Centra los elementos en la navbar */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 0;
+    margin: 0;
 }
 
 ul li{
@@ -27,6 +32,14 @@ ul li{
     margin: 10px 20px;
     font-size: 18px;
     cursor: pointer;
+    
+}
+
+/* Quitar estilos de enlace */
+ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
 
 .toggle-icon{

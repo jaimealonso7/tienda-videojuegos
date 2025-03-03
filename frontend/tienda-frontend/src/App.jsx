@@ -4,6 +4,7 @@ import Navbar from './componentes/Navbar/Navbar';
 import Home from './paginas/Home/Home';
 import Login from './componentes/Login/Login';
 import Registro from './componentes/Registro/Registro';
+import Juegos from './paginas/Juegos/Juegos';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
     localStorage.setItem('current_theme', theme);
   },[theme])
 
+  
   return (
     <Router>
       <div className={`container ${theme}`}>  {/* Aplica el tema aquí */}
@@ -25,10 +27,12 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
+            <Route path="/juegos" element={<Juegos />} />  {/* Ahora Productos tiene su propia ruta */}
           </Routes>
         </div>
       </div>
     </Router>
+    
   )
 }
 

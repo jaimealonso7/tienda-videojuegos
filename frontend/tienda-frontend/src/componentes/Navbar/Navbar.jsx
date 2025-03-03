@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 import logo_light from '../../assets/logo-black.png'
 import logo_dark from '../../assets/logo-white.png'
@@ -19,8 +20,8 @@ const Navbar = ({theme, setTheme}) => {
         <img src={theme == "light" ? logo_light : logo_dark} alt="" className='logo' />
 
         <ul>
-            <li>Home</li>
-            <li>Products</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/juegos">Juegos</Link></li>
             <li>Features</li>
             <li>About</li>
         </ul>
