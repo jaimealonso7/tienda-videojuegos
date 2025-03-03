@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './componentes/Navbar/Navbar';
 import Home from './paginas/Home/Home';
-import Login from './paginas/Login/Login';
-import Registro from './paginas/Registro/Registro';
+import Login from './componentes/Login/Login';
+import Registro from './componentes/Registro/Registro';
 
 const App = () => {
 
