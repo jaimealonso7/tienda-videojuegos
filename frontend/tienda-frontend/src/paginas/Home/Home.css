@@ -20,7 +20,7 @@
 
 /* Estilos para el h1 */
 .home-container h1 {
-    margin-top: 20px;  /* Ajusta el margen superior para que no se pegue al navbar */
+    margin-top: 40px;  /* Ajusta el margen superior para que no se pegue al navbar */
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
-import logo_light from '../../assets/logo-black.png'
-import logo_dark from '../../assets/logo-white.png'
 import search_icon_light from '../../assets/search-w.png'
 import search_icon_dark from '../../assets/search-b.png'
 import toogle_light from '../../assets/night.png'
 import toogle_dark from '../../assets/day.png'
+import mandoNegro from '../../assets/mandoNegro.png'
+import mandoBlanco from '../../assets/mandoBlanco.png'
 
 const Navbar = ({theme, setTheme}) => {
   
@@ -17,7 +17,7 @@ const Navbar = ({theme, setTheme}) => {
   return (
     <div className='navbar'>
         
-        <img src={theme == "light" ? logo_light : logo_dark} alt="" className='logo' />
+        <img src={theme == "light" ? mandoNegro : mandoBlanco} alt="" className='logo' />
 
         <ul>
             <li><Link to="/">Home</Link></li>

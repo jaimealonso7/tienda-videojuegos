@@ -1,0 +1,35 @@
+.selected-juego {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 60px;
+    
+  }
+
+.juego-container {
+    width: 300px;
+        height: 400px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    
+}
+
+.text {
+    margin: 0;
+}
+
+.juego-img {
+    width: 100%;  /* Asegura que la imagen ocupe el 100% del contenedor, pero sin excederlo */
+    max-width: 400px;  /* Limitamos el ancho máximo */
+    max-height: 300px; /* Limita la altura máxima de la imagen */
+    object-fit: contain;  /* Ajusta la imagen sin distorsionarla */
+    border-radius: 8px;   /* Si lo deseas, puedes agregar bordes redondeados */
+  }
